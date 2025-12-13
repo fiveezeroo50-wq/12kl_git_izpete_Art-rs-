@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Skolas saites</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- MOBILE MENU TOGGLE -->
+<div class="menu-toggle" onclick="toggleMenu()">
+    <div class="menu-toggle-logo">
+        <img src="/logo.png" alt="Logo" />
+        <span>e-Klase</span>
+    </div>
+    <div class="menu-toggle-btn" id="menu-icon">☰</div>
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+
+    <!-- Fake logo placeholder -->
+    <div class="logo">
+        <a href="sakums.html"><img src="/logo.png" alt="Logo" /></a>
+        <div></div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-item" onclick="location.href = 'sakums.html';">🏠 Sākums</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">📘 Dienasgrāmata</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">📊 Pārskati</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">💬 Saziņa</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">🔲 Partneri</div>
+        <div class="menu-item active">🔗 Skolas saites</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">⭐ Ģimenes komplekts</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">📣 Notifikācijas</div>
+        <div class="menu-item" onclick="location.href = 'epasts.html';">✉️ E-pasts</div>
+    </div>
+
+    <div class="exit" onclick="location.href = 'index.html';">⏻ Iziet</div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <div class="topbar">Skolēns 🔔</div>
+
+    <div class="content-box">
+
+        <h2>Skolas saites:</h2>
+
+        <a href="https://www.ostvalda.lv/lv/kontakti/skolas-kontakti" target="_blank" class="school-card">
+            <img src="https://www.ostvalda.lv/icon.png" alt="Skolas logo">
+
+            <div class="school-info">
+                <div class="school-title">Rīgas Ostvalda vidusskola</div>
+
+                <div>
+                    Rīgas Ostvalda vidusskola atrodas Dammes ielā 20,
+                    Imanta, Kurzemes rajons, Rīga, LV-1069, un ir skola,
+                    kas nosaukta Nobela prēmijas laureāta Vilhelma...
+                </div>
+
+                <div class="school-footer">
+                    🟢 Rīgas Ostvalda vidusskola
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+        sidebar.classList.add('closed');
+        menuIcon.textContent = '☰';
+    } else {
+        sidebar.classList.remove('closed');
+        sidebar.classList.add('open');
+        menuIcon.textContent = '✕';
+    }
+}
+
+// Initialize sidebar as closed on mobile
+if (window.innerWidth < 768) {
+    document.getElementById('sidebar').classList.add('closed');
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>e-Klase Dashboard</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- MOBILE MENU TOGGLE -->
+<div class="menu-toggle" onclick="toggleMenu()">
+    <div class="menu-toggle-logo">
+        <img src="/logo.png" alt="Logo" />
+        <span>e-Klase</span>
+    </div>
+    <div class="menu-toggle-btn" id="menu-icon">☰</div>
+</div>
+
+<div class="sidebar" id="sidebar">
+    <!-- Fake logo placeholder -->
+    <div class="logo">
+        <a href="sakums.html"><img src="/logo.png" alt="Logo" /></a>
+        <div></div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-item active">🏠 Sākums</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">📘 Dienasgrāmata</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">📊 Pārskati</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">📨 Saziņa</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">🔲 Partneri</div>
+        <div class="menu-item" onclick="location.href = 'skola.html';">🔗 Skolas saites</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">⭐ Ģimenes komplekts</div>
+        <div class="menu-item" onclick="location.href = 'loading.html';">📣 Notifikācijas</div>
+        <div class="menu-item" onclick="location.href = 'epasts.html';">✉️ E-pasts</div>
+    </div>
+
+    <div class="exit" onclick="location.href = 'index.html';">⏻ Iziet</div>
+</div>
+
+<div class="main">
+
+    <div class="topbar">Skolēns 🔔</div>
+
+    <div class="content-box">
+        <h2>Mācību pārskats:</h2>
+
+        <div class="top-cards">
+            <div class="small-card">🟢 Vērtējumi</div>
+            <div class="small-card">🟣 Ieraksti dienasgrāmatā</div>
+            <div class="small-card">🔴 Kavējumi</div>
+        </div>
+
+        <div class="panels">
+            <div class="panel"></div>
+            <div class="panel"></div>
+            <div class="panel"></div>
+        </div>
+
+        <div class="schedule-container">
+            <div class="schedule-block">
+                <div class="schedule-header">
+                    📅 19.12.2025, piektdiena
+                </div>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Priekšmets un telpa</th>
+                            <th>Tēma</th>
+                            <th>Uzdots</th>
+                            <th>Vērtējumi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Ģeogrāfija <span class="room-number">315</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Ģeogrāfija <span class="room-number">315</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Ģeogrāfija <span class="room-number">315</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Svešvaloda <span class="room-number">206</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Svešvaloda <span class="room-number">206</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Teātris un drāma <span class="room-number">107</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Teātris un drāma <span class="room-number">107</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Teātris un drāma <span class="room-number">107</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-block">
+                <div class="schedule-header">
+                    📅 22.12.2025, pirmdiena
+                </div>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Priekšmets un telpa</th>
+                            <th>Tēma</th>
+                            <th>Uzdots</th>
+                            <th>Vērtējumi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Mazākumtautības valoda un literatūra <span class="room-number">107</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Mazākumtautības valoda un literatūra <span class="room-number">107</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Svešvaloda <span class="room-number">206</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Svešvaloda <span class="room-number">206</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Programmēšana <span class="room-number">306</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Svešvaloda <span class="room-number">206</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="subject-cell">
+                                <span>🔗</span>
+                                <span>Sociālās zinātnes <span class="room-number">304</span></span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+        sidebar.classList.add('closed');
+        menuIcon.textContent = '☰';
+    } else {
+        sidebar.classList.remove('closed');
+        sidebar.classList.add('open');
+        menuIcon.textContent = '✕';
+    }
+}
+
+// Initialize sidebar as closed on mobile
+if (window.innerWidth < 768) {
+    document.getElementById('sidebar').classList.add('closed');
+}
+</script>
+
+</body>
+</html>
+

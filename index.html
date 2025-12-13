@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>e-Klase Login</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+
+<div class="container">
+
+    <div class="logo">
+        <img src="/logo.png" alt="Logo" />
+    </div>
+
+    <div class="card">
+
+        <div class="back-arrow">←</div>
+
+        <h2>Sveicināti!</h2>
+        <p class="subtitle">Pieslēdzieties savam e-klases profilam</p>
+
+        <form onsubmit="event.preventDefault(); handleLogin(); return false;">
+            <label for="user">Lietotājvārds</label>
+            <input id="user" type="text" placeholder="Ievadiet lietotājvārdu" />
+
+            <label for="pass">Parole</label>
+            <input id="pass" type="password" placeholder="Ievadiet paroli" />
+
+            <button type="submit" class="btn" id="login-btn">Pieslēgties</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function handleLogin() {
+    const loginBtn = document.getElementById('login-btn');
+
+    // Add rainbow animation class
+    loginBtn.classList.add('rainbow-animate');
+
+    // Remove animation class and redirect after 1 second
+    setTimeout(() => {
+        loginBtn.classList.remove('rainbow-animate');
+        location.href = 'sakums.html';
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
+
